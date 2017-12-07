@@ -1,10 +1,12 @@
 #!/usr/bin/env groovy
 properties([
-    [$class: 'GithubProjectProperty',
-    displayName: 'Sireddy1',
-    projectUrlStr: 'https://github.com/Sireddy669/sireddy1.git/'],
-    pipelineTriggers([
-      upstream(upstreamProjects: "https://github.com/Sireddy669/sireddy2.git/", threshold:'SUCCESS')  ])])
+  pipelineTriggers([
+    upstream(
+      threshold: 'SUCCESS',
+      upstreamProjects: 'https://github.com/Sireddy669/sireddy1.git'
+    )
+  ])
+])
 
 pipeline {
     agent any 

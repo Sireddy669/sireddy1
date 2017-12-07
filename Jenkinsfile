@@ -4,7 +4,7 @@ properties([
     displayName: 'Sireddy1',
     projectUrlStr: 'https://github.com/Sireddy669/sireddy1.git/'],
     pipelineTriggers([
-        upstreamProjects: 'https://github.com/Sireddy669/sireddy2.git'])])
+      upstream(upstreamProjects: "https://github.com/Sireddy669/sireddy2.git/", threshold:hudson.model.Result.SUCCESS  ])])
 
 pipeline {
     agent any 

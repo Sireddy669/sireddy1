@@ -26,9 +26,7 @@ pipeline {
                 sh 'pwd'
                 stage('Upstream') {
     // Build 2nd job
-                     parameters {
-        booleanParam(defaultValue: true, description: '', name: 'userFlag')
-    }
+                     
 
 }
 

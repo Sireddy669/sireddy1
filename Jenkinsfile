@@ -24,12 +24,6 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'pwd'
-                stage('Upstream') {
-    // Build 2nd job
-                     
-                }
-}
-
             }
         }
     }
